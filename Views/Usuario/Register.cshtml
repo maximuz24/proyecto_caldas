@@ -1,0 +1,25 @@
+@model rincon.Models.usuarioModel
+
+<h1>Registrarse</h1>
+
+@using (Html.BeginForm(actionName: "register",
+ controllerName: "usuario", FormMethod.Post))
+{
+    <label>Nombre</label>
+
+   @Html.TextBoxFor(modelo => modelo.usuario_nombre)
+    <br />
+    <label>Apellido</label>
+
+   @Html.TextBoxFor( modelo => modelo.usario_apellido)
+     <br />
+    <label>Correo</label>
+
+   @Html.TextBoxFor( modelo => modelo.usario_correo)
+    <br />
+    <label>Contraseña</label>
+
+   @Html.TextBoxFor( modelo => modelo.usario_contraseña)
+   <br />
+   <imput type="submit" value="Guardar" />
+} 
