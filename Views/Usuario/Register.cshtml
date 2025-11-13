@@ -1,25 +1,41 @@
 @model rincon.Models.usuarioModel
 
-<h1>Registrarse</h1>
 
-@using (Html.BeginForm(actionName: "register",
- controllerName: "usuario", FormMethod.Post))
-{
-    <label>Nombre</label>
 
-   @Html.TextBoxFor(modelo => modelo.usuario_nombre)
-    <br />
-    <label>Apellido</label>
+<div class="container text-center w-75">
+  <h1>Registrarse</h1>
+  <form asp-action="Register" asp-controller="Usuario" method="post">
 
-   @Html.TextBoxFor( modelo => modelo.usario_apellido)
-     <br />
-    <label>Correo</label>
+    <div class="form-group">
+      <label for="Usuario_Nombre">Nombre</label>
+      <input type="text" class="form-control" id="Usuario_Nombre" name="Usuario_Nombre" asp-for="Usuario_nombre"
+        required />
+      <span asp-validation-for="Usuario_nombre" class="text-danger"></span>
 
-   @Html.TextBoxFor( modelo => modelo.usario_correo)
-    <br />
-    <label>Contraseña</label>
+    </div>
 
-   @Html.TextBoxFor( modelo => modelo.usario_contraseña)
-   <br />
-   <imput type="submit" value="Guardar" />
-} 
+    <div class="form-group">
+      <label for="Usuario_Apellido">Apellido</label>
+      <input type="text" class="form-control" id="Usuario_Apellido" name="Usuario_Apellido" asp-for="Usuario_apellido"
+        required />
+      <span asp-validation-for="Usuario_apellido" class="text-danger"></span>
+
+    </div>
+
+    <div class="form-group">
+      <label for="Usuario_Correo">Correo</label>
+      <input type="text" class="form-control" id="Usuario_Correo" name="Usuario_Correo" asp-for="Usuario_correo"
+        required />
+      <span asp-validation-for="Usuario_correo" class="text-danger"></span>
+
+    </div>
+
+    <div class="form-group">
+      <label for="Usuario_Contraseña">Contraseña</label>
+      <input type="text" class="form-control" id="Usuario_Contraseña" name="Usuario_Contraseña" asp-for="Usuario_contraseña"
+        required />
+      <span asp-validation-for="Usuario_contraseña" class="text-danger"></span>
+
+    </div>
+  </form>
+</div>
