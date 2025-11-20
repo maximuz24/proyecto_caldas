@@ -14,6 +14,7 @@ public class usuarioModel
     [Required(ErrorMessage = "La Contraseña es obligatoria.")]
     [MinLength(6, ErrorMessage = "La Contraeña debe tener al menos 6 caracteres.")]
 public required string Usuario_contraseña { get; set;}
+public required string Usuario_Salt { get; set;}
 
 
 }

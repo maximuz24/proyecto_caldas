@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rincon")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bacb546910cb83b6be24bdebc7ccc037821aa82e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11ad2645b074da8ec94ba21957a699fc4b4f5ed3")]
 [assembly: System.Reflection.AssemblyProductAttribute("rincon")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rincon")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

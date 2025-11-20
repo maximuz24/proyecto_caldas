@@ -32,10 +32,17 @@
 
     <div class="form-group">
       <label for="Usuario_Contraseña">Contraseña</label>
-      <input type="text" class="form-control" id="Usuario_Contraseña" name="Usuario_Contraseña" asp-for="Usuario_contraseña"
-        required />
+      <input type="text" class="form-control" id="Usuario_Contraseña" name="Usuario_Contraseña"
+        asp-for="Usuario_contraseña" required />
       <span asp-validation-for="Usuario_contraseña" class="text-danger"></span>
 
     </div>
   </form>
 </div>
+
+@section Scripts {
+  @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+  }
+}

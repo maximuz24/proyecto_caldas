@@ -1,0 +1,37 @@
+@model rincon.Models.LoginModel
+
+<div class="container text-center w-75">
+    <h1>Iniciar Sesión</h1>
+    <form asp-action="Login" asp-controller="Auth" method="post" class="mt-5">
+        <div class="form-group mt-5">
+            <label for="login_correo">Correo</label>
+            <input type="email" class="form-control" id="login_correo" name="login_correo" asp-for="login_correo"
+                required>
+            <span asp-validation-for="login_correo" class="text-danger"></span>
+        </div>
+        <div class="form-group mt-5">
+            <label for="Login_contraseña">Contraseña</label>
+            <input type="password" class="form-control" name="Login_contraseña" id="Login_contraseña"
+                asp-for="Login_contraseña" required>
+        </div>
+        <button type="submit" class="btn btn-primary mt-5">
+            Iniciar Sesión
+        </button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
